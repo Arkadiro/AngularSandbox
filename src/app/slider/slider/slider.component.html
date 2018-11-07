@@ -1,0 +1,17 @@
+<drag-scroll
+  scrollbar-hidden="true"
+  style="height:530px"
+  #nav>
+  <img *ngFor="let slide of slides" drag-scroll-item src="{{slide}}" (click)="clickItem(image)"/>
+  <!-- <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item>
+  <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item>
+  <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item>
+  <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item>
+  <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item>
+  <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item>
+  <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item> -->
+</drag-scroll>
+<div style="margin-top:-90px; position: absolute; width:100%;text-align:center">
+    <button class="btn btn-primary" (click)="moveLeft()">Left</button>
+    <button class="btn btn-primary"(click)="moveRight()">Right</button>
+</div>

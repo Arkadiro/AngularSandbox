@@ -1,0 +1,10 @@
+drag-scroll {
+  width: 100%;
+}
+img {
+  height: auto;
+  width: 25%;
+}
+.btn.btn-primary {
+  margin:5px;
+}
