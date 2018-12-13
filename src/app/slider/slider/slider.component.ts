@@ -18,10 +18,10 @@ export class SliderComponent implements OnInit {
 
   ngOnInit() {
     for (let i = 1; i <= 3; i++) {
-      this.slides.push(`https://k5x5n5g8.ssl.hwcdn.net/content/181104/0005-0${i}.jpg`)
+      this.slides.push(`меню${i}`)
     }
     for (let i = 1; i <= 3; i++) {
-      this.slides.push(`https://k5x5n5g8.ssl.hwcdn.net/content/181104/0005-0${i}.jpg`)
+      this.slides.push(`раздел${i}`)
     }
     //console.log(this.slides)
   }
