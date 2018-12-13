@@ -1,8 +1,9 @@
+<div class="container">
 <drag-scroll
   scrollbar-hidden="true"
   style="height:530px"
   #nav>
-  <a href="/" *ngFor="let slide of slides" drag-scroll-item style="display: inline-block; margin-right: 200px">{{slide}}</a>
+  <a [routerLink]="['/', i]" routerLinkActive="active" *ngFor="let slide of slides; let i = index" drag-scroll-item style="display: inline-block; margin-right: 200px">{{slide}}{{i}}</a>
   <!-- <img *ngFor="let slide of slides" drag-scroll-item src="{{slide}}" (click)="clickItem(image)"/> -->
   <!-- <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item>
   <img src="https://k5x5n5g8.ssl.hwcdn.net/content/180731/0019-01.jpg" drag-scroll-item>
@@ -16,3 +17,4 @@
     <button class="btn btn-primary" (click)="moveLeft()">Left</button>
     <button class="btn btn-primary"(click)="moveRight()">Right</button>
 </div> -->
+</div>

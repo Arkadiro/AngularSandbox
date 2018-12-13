@@ -7,18 +7,5 @@ import { PrintService } from './print.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  title = 'angularSendbox';
-  age = 30;
-
-  constructor( private printService: PrintService) {}
-
-  ngOnInit(){
-    this.printService.onPrint(this.title)
-  }
-
-  hasBirthday() {
-    this.age ++;
-    this.title="Angular"
-  }
+export class AppComponent{
 }

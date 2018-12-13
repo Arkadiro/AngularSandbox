@@ -8,3 +8,6 @@ img {
 .btn.btn-primary {
   margin:5px;
 }
+.active {
+  color:red;
+}
